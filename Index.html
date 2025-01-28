@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="logo">
+        <img src="photo.png" alt="Logo">
+      </div>
+      <div class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Community</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="auth-buttons">
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="navbar-content">
+        <h1>The largest community of photo enthusiasts</h1>
+        <button class="join-now-btn">Join Now</button>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="left-part">
+        <h2>Snap photos and snap like never before</h2>
+        <div class="subheading">
+          <h3>Sed ut perspiciatis</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+          <button>Learn More</button>
+        </div>
+        <div class="subheading">
+          <h3>Nemo enim ipsam</h3>
+          <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit, sed quia non numquam.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="subheading">
+          <h3>Lorem ipsum dolor</h3>
+          <p>Amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi.</p>
+          <button>Learn More</button>
+        </div>
+        <div class="subheading">
+          <h3>Tempor incididunt</h3>
+          <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+             qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="sidebar">
+      <h1>Have you ever posted any photo on social media?</h1>
+      <p class="large-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore</p>
+      <div class="content-container">
+        <div class="left-part-s">
+          <h3>Sed ut perspiciatis</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+            sed quia consequuntur.</p>
+          <h3>Lorem ipsum dolor</h3>
+          <p>Amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3>Nemo enim ipsam</h3>
+          <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+            Neque porro quisquam est, qui dolorem.</p>
+        </div>
+        <div class="right-part-s">
+          <img src="Mask Group.png" alt="Image" />
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="extra-section1">
+      <h1 class="extra-heading">Make your photos more stylish</h1>
+      <p class="extra-large-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore</p>
+      <div class="extra-image-container">
+        <div class="extra-image-block">
+          <img src="Img1.png" alt="Image 1" />
+          <h3 class="extra-subheading">Sed ut perspiciatis</h3>
+          <p class="extra-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia.</p>
+        </div>
+        <div class="extra-image-block">
+          <img src="Img2.png" alt="Image 2" />
+          <h3 class="extra-subheading">Lorem ipsum dolor</h3>
+          <p class="extra-text">Amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="extra-image-block">
+          <img src="Img3.png" alt="Image 3" />
+          <h3 class="extra-subheading">Nemo enim ipsam</h3>
+          <p class="extra-text">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="extra-section2">
+      <h1 class="extra2-heading">Ready to take a free trial?</h1>
+      <p class="extra2-large-text">Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore</p>
+      <div class="extra2-form-container">
+        <h2 class="form-heading">Sign up for a free account</h2>
+        <form class="signup-form" onsubmit="return logFormData(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="first-name" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="last-name" placeholder="Last Name" required />
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Phone Number" required />
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <input type="password" id="password" placeholder="Create Password" minlength="8" required />
+          </div>
+    
+          <button type="submit" class="signup-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    
+    
+    
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

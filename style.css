@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  border: 2px solid #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Full width of the page */
+  max-width: 1500px; /* Align with container width */
+  height: 70px; /* Reduced header height */
+  background-color: white;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-left: 20px; /* Left space before the logo */
+}
+
+.logo img {
+  width: 80px; /* Reduced logo size */
+  height: auto;
+  border: 5px solid purple; /* Purple border */
+  padding: 2px;
+  border-radius: 5px; /* Curved edges */
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px; /* Space after register button */
+  border-radius: 25px; /* Curved edges */
+
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px; /* Curved edges */
+  transition: background-color 0.3s ease;
+
+  /* background-color: transparent; */
+}
+
+.login-btn {
+  background-color: transparent;
+  color: rgb(14, 91, 199);
+  border-color: rgb(14, 91, 199); /* Sky-blue border for login button */
+  border: 1px solid rgb(14, 91, 199);
+}
+
+.register-btn {
+  background-color: rgb(14, 91, 199); /* Sky-blue background for register button */
+  border: 1px solid rgb(14, 91, 199);
+  color: white;
+}
+
+/* Rest of the layout */
+.main-content, .sidebar, .extra-section, .footer {
+  border: 2px solid gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  padding: 20px;
+  height: 550px; /* Set the navbar height */
+  background-image: url('Nav.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Position it above the background but below the content */
+}
+
+.navbar-content {
+  /* color: white; */
+  font-size: 40px;
+  position: relative;
+  z-index: 2; /* Large font size */
+}
+
+.navbar-content h1 {
+  margin-bottom: 20px;
+  color: rgb(245, 245, 245); /* Space between text and button */
+}
+
+.join-now-btn {
+  position: relative;
+  z-index: 2;
+  padding: 10px 30px;
+  background-color: rgb(14, 91, 199);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Curved edges */
+  transition: background-color 0.3s ease;
+  margin-top: 30px; /* Adjust the space between text and button */
+  margin-left: 50px; /* Adjust the button horizontally (left) */
+  margin-bottom: 30px;
+}
+
+.join-now-btn:hover {
+  background-color: darkblue;
+}
+
+/* maincontent starts 3rd session */
+
+
+.main-content {
+  display: flex;
+  background-color: white; /* Pure white background */
+  padding: 20px;
+  height: 600px;
+   /* Adjust height between 400 and 500 px */
+}
+
+.left-part h2 {
+  text-align: left; /* Aligns the heading to the left */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 50px; /* Space below the heading */
+}
+
+/* Left part styling */
+.left-part {
+
+  flex: 1; /* Takes half of the main content */
+  padding: 20px;
+}
+
+/* Right part styling */
+.right-part {
+  flex: 1; /* Takes half of the main content */
+  padding: 60px;
+  margin-top: 175px;
+}
+
+/* Subheading styling */
+.subheading {
+  margin-bottom: 20px; /* Space between subheadings */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Subheading elements */
+.subheading h3 {
+  margin-bottom: 10px; /* Space between heading and text */
+}
+
+.subheading p {
+  margin-bottom: 10px; /* Space between text and button */
+ /* Allow text to take available space */
+}
+
+/* Button styling */
+.subheading button {
+  padding: 8px 12px;
+  background-color: rgb(14, 91, 199); /* Button color */
+  border: none;
+  color: white;
+  border-radius: 5px; /* Rounded edges for the button */
+  cursor: pointer;
+
+}
+
+
+/* side bar starts 4th session*/
+
+.sidebar {
+  height: 1100px;
+  background-color: white; /* Visible background */
+  border: 1px solid transparent; /* Invisible border */
+  margin-top: 50px; /* Add space above the sidebar */
+  padding: 20px;
+}
+
+/* Main heading styling */
+.sidebar h1 {
+  text-align: center;
+  margin-top: 50px; /* Align heading to the center */
+  margin-bottom: 20px; /* Space below the main heading */
+}
+
+/* Large text styling */
+.large-text {
+  font-size: 30px; /* Large font size */
+  margin-bottom: 75px;
+  padding: 0px 250px 0px 250px; /* Space below the large text */
+}
+
+/* Content container for dividing layout */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left part (subheadings and text) */
+.left-part-s {
+  flex: 2; /* 2:3 ratio for the left side */
+  align-items: flex-start;
+  text-align: left;
+  padding: 130px 0px 0px 50px;
+  /* padding-right: 10px; */
+}
+
+.left-part-s h3 {
+  margin-bottom: 30px; /* Space between subheadings and text */
+  font-size: 20px;
+}
+
+.left-part-s p {
+  margin-bottom: 90px; /* Space below each text */
+  padding-right: 100px;
+  font-size: 17px;
+}
+
+/* Right part (image) */
+.right-part-s {
+  flex: 3; /* 2:3 ratio for the right side */
+}
+
+.right-part-s img {
+  max-width: 100%; /* Ensure image takes full width */
+  height: auto; /* Adjust height automatically */
+}
+
+/* 5th section starts */
+
+/* Extra Section 1 Styling */
+.extra-section1 {
+  background-color: white; /* Visible background */
+  border: 1px solid transparent; /* Invisible border */
+  margin-top: 50px; /* Add space above the section */
+  padding: 20px;
+}
+
+/* Main heading for extra section */
+.extra-heading {
+  text-align: center; /* Align heading to the center */
+  margin-top: 75px;
+  margin-bottom: 30px; /* Space below the main heading */
+  font-size: 40px;
+}
+
+/* Large text styling for extra section */
+.extra-large-text {
+  font-size: 30px; /* Large font size */
+  text-align: center; /* Center the text */
+  margin-bottom: 75px; /* Space below the large text */
+  padding: 0px 250px 0px 250px;
+}
+
+/* Container for images */
+.extra-image-container {
+  display: flex;
+  justify-content: space-around; /* Equal space around images */
+  align-items: flex-start; /* Align images to the top */
+}
+
+/* Styling for each image block */
+.extra-image-block {
+  text-align: center; /* Center subheading and text under image */
+  width: 29%; /* Adjust width for each image block */
+  border: 1px solid rgb(245, 222, 179);
+}
+
+/* Subheading and text for each image block */
+.extra-image-block img {
+  max-width: 100%; /* Ensure images take full width */
+  height: auto; /* Adjust height automatically */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.extra-subheading {
+  margin: 20px 0px 20px 0;
+  font-size: 25px; /* Space between subheading and text */
+}
+
+.extra-text {
+  margin: 20px 0px 50px 0; /* Space below each text */
+  padding: 0px 100px 0px 100px;
+  text-align: left;
+  font-size: 16px;
+}
+
+
+/* Extra Section 2 Styling */
+/* 6th secssion starts */
+
+.extra-section2 {
+  background-color: white; /* Visible background */
+  border: 1px solid transparent; /* Invisible border */
+  margin-top: 50px; /* Add space above the section */
+  padding: 20px;
+  height: 875px;
+}
+
+/* Main heading for extra section 2 */
+.extra2-heading {
+  text-align: center; /* Align heading to the center */
+  margin-bottom: 20px; /* Space below the main heading */
+  margin-top: 75px;
+}
+
+/* Large text styling for extra section 2 */
+.extra2-large-text {
+  font-size: 30px; /* Large font size */
+  text-align: center; /* Center the text */
+  margin-bottom: 60px; /* Space below the large text */
+  padding: 0px 200px 0px 200px;
+}
+
+
+/* Form container with grey border */
+.extra2-form-container {
+  border: 1px solid grey; /* Grey border */
+  padding: 50px;
+  margin: 0 auto; /* Center the form container */
+  width: 700px; /* Adjust width of the form container */
+  height: 475px;
+}
+
+/* Form heading styling */
+.form-heading {
+  text-align: left; /* Center form heading */
+  margin: 25px 0px 50px 0px;
+  font-size: 25px;
+}
+
+/* Form group styling for each row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  width: 48%; /* Half width for first/last name and email/phone rows */
+}
+
+.form-group input {
+  width: 100%; /* Full width input fields */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded edges */
+  box-sizing: border-box;
+}
+
+/* Full-width password input */
+.signup-form .form-group:nth-of-type(3) {
+  width: 100%;
+}
+
+.signup-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Signup button styling */
+.signup-btn {
+  width: 35%;
+  padding: 10px;
+  background-color: rgb(14, 91, 199);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded edges */
+  margin-top: 20px;
+}
+
+.signup-btn:hover {
+  background-color: deepskyblue; /* Darker blue on hover */
+}
+
+
